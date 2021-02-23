@@ -1,19 +1,15 @@
 # EasyExcel2USB Evaluation Tool
 ## Scope
----
 **EasyExcel2USB** provides a portable way to evaluate a new chip without any coding. This project aims to automatically scan the datasheet of the chip and convert it into a **GUI based evaluation software** for register-level debugging. 
 ## Basic Functions
----
 * Readback register values from target devices
 * Show values in an Excel workbook
 * Edit values in an Excel workbook
 * Write the registers on target devices
 * Export operation history and generate C code for offline configuration
 ## Principle of operation
----
 In current version, we rely on a free online PDF-To-Excel tool (small pdf) to create an editable Excel form from a datasheet. Considering the relative high error rate of the conversion result, we prefer to develop a dedicated scan and OCR tool for register map identification in the feature.
 ## Roadmap
----
 ### Current Version
 * Use online PDF2Excel tool and provide full capacity of register control in Excel using micros coded by VBA.
 * Support SPI and AXI devices (SPI supported via USB using FT2232H as a physical bridge, AXI supported on Xilinx FPGA via Ethernet with a TCP server running on Microblaze embedded processor)
@@ -21,11 +17,9 @@ In current version, we rely on a free online PDF-To-Excel tool (small pdf) to cr
 * Support for exporting operation history and generate C code for offline configuration
 * Support for generation of chip-by-chip programming framework (in C code)
 ## Hardware
----
 * Curently we use a homemade DAC FMC Card with FT2232H on board as the target device.
 * The AXI target device is a JESD204B Core running on a KC705 development kit.
 ## Build Instructions
----
 1. Get the sources from Github:
 ``` shell
 git clone --recursive https://github.com/ddomax/EasyEval.git
