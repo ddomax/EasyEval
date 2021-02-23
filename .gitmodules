@@ -1,0 +1,9 @@
+[submodule "hdl"]
+	path = hdl
+	url = https://github.com/ddomax/eevl-hdl.git
+[submodule "sdk"]
+	path = sdk
+	url = https://github.com/ddomax/eevl-sdk.git
+[submodule "qt_app"]
+	path = qt_app
+	url = https://github.com/ddomax/eevl-qt_app.git
